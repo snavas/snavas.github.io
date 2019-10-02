@@ -20,7 +20,7 @@ baseurl: ""
 
 # List of links in the navigation bar
 navbar-links:
-  Research: "publications"
+  Research: "publications.html"
   About me:
     - LinkedIn: "https://www.linkedin.com/in/samuelnavasm/"
     - Research Gate: "https://www.researchgate.net/profile/Samuel_Navas_Medrano"
