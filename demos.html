@@ -132,6 +132,20 @@ title: Demos
 </div>
 
 <script>
+    window.onload = function() {
+        var gifs = document.getElementsByClassName("gif");
+        for g in gifs{
+            g.addEventListener("mouseenter", function( event ) {
+                var newsrc = event.target.src.split("\\.")[0]+".gif";
+                event.target.src = newsrc;
+            }, false);
+            g.addEventListener("mouseover", function( event ) {
+                var newsrc = event.target.src.split("\\.")[0]+".png";
+                event.target.src = newsrc;
+            }, false);
+        }
+    }
+    /* with jQuery
     $(function() {
         $(".gif").hover(
             function() {
@@ -144,4 +158,5 @@ title: Demos
             }                         
         );                  
     });
+    */
 </script>
