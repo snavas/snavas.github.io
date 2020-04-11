@@ -46,11 +46,11 @@ navbar-col: "#CCD9CE"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
-link-col: "#CCD9CE"
-hover-col: "#7FADA9"
+link-col: "#7FADA9"
+hover-col: "#CCD9CE"
 footer-col: "#7FADA9"
-footer-text-col: "#ffffff"
-footer-link-col: "#CCD9CE"
+footer-text-col: "#000000"
+footer-link-col: "#ffffff"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
@@ -105,7 +105,7 @@ url-pretty: "snavas.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-108608181-1"
+#google_analytics: "UA-108608181-1"
 
 # Google Tag Manager ID
 #gtm: ""
