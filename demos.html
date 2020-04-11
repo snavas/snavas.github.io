@@ -133,7 +133,7 @@ js: /js/d3.min.js
 </div>
 
 <script>
-    $(function() {
+    $(document).ready(function () {
         $(".gif").hover(
             function() {
                 var newsrc = this.attr("src").replace(/\.[^/.]+$/, ".png")
