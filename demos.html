@@ -13,14 +13,6 @@ title: Demos
     .modal-content {
         overflow:hidden;
     }
-    .static {
-      position:absolute;
-      background: white;
-    }
-
-    .static:hover {
-      opacity:0;
-    }
 </style>
 
 <!-- <img src="../img/thumbnail.jpg" class="img-fluid" alt="Responsive image"> 
@@ -41,7 +33,7 @@ title: Demos
 
   <div class="col-md-6">
     <div class="thumbnail">
-        <img class="card-img-top static" src="../img/image4.png" alt="Card image cap 1"><img class="card-img-top active" src="../img/image4.gif" alt="Card image cap 1">
+        <img class="card-img-top gif" src="../img/image4.png" alt="Card image cap 1">
         <div class="caption">
             <p class="card-text">Supporting Remote Collaboration with Augmented Reality and Architectural Plans.</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -54,7 +46,7 @@ title: Demos
 
   <div class="col-md-6">
     <div class="thumbnail">
-        <img class="card-img-top static" src="../img/image3.png" alt="Card image cap 1"><img class="card-img-top active" src="../img/image3.gif" alt="Card image cap 1">
+        <img class="card-img-top gif" src="../img/image3.png" alt="Card image cap 1">
         <div class="caption">
             <p class="card-text">Simulating Human Pointing Gestures using Electrical Muscle Stimulation.</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -138,3 +130,18 @@ title: Demos
 
   </div>
 </div>
+
+<script>
+    $(function() {
+        $(".gif").hover(
+            function() {
+                var newsrc = this.attr("src").split("\\.")[0]+".gif";
+                $(this).attr("src", newsrc);
+            },
+            function() {
+                var newsrc = this.attr("src").split("\\.")[0]+".png";
+                $(this).attr("src", newsrc);
+            }                         
+        );                  
+    });
+</script>
