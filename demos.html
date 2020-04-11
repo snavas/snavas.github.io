@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Demos
-js: /js/d3.min.js
+js: /js/jquery-1.11.2.min.js
 ---
 
 <style>
@@ -15,8 +15,6 @@ js: /js/d3.min.js
         overflow:hidden;
     }
 </style>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 <!-- <img src="../img/thumbnail.jpg" class="img-fluid" alt="Responsive image"> 
 <br></br>  -->
@@ -138,14 +136,12 @@ js: /js/d3.min.js
     $(document).ready(function () {
         $(".gif").hover(
             function() {
-                var newsrc = $(this).attr("src").replace(/\.[^/.]+$/, ".png")
+                var newsrc = $(this).attr("src").replace(/\.[^/.]+$/, ".gif")
                 $(this).attr("src", newsrc);
-                console.log("in");
             },
             function() {
                 var newsrc = $(this).attr("src").replace(/\.[^/.]+$/, ".png")
                 $(this).attr("src", newsrc);
-                console.log("out");
             }                         
         );                  
     });
