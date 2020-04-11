@@ -134,7 +134,7 @@ title: Demos
 <script>
     window.onload = function() {
         var gifs = document.getElementsByClassName("gif");
-        for g in gifs{
+        for (g in gifs) {
             g.addEventListener("mouseenter", function( event ) {
                 var newsrc = event.target.src.split("\\.")[0]+".gif";
                 event.target.src = newsrc;
