@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Demos
+js: js/jquery-1.11.2.min.js
 ---
 
 <style>
@@ -132,31 +133,16 @@ title: Demos
 </div>
 
 <script>
-    window.onload = function() {
-        var gifs = document.getElementsByClassName("gif");
-        for (var i = 0 ; i < gifs.length; i++) {
-            gifs[i].addEventListener("mouseenter", function( event ) {
-                var newsrc = event.target.src.split("\\.")[0]+".gif";
-                event.target.src = newsrc;
-            }, false);
-            gifs[i].addEventListener("mouseover", function( event ) {
-                var newsrc = event.target.src.split("\\.")[0]+".png";
-                event.target.src = newsrc;
-            }, false);
-        }
-    }
-    /* with jQuery
     $(function() {
         $(".gif").hover(
             function() {
-                var newsrc = this.attr("src").split("\\.")[0]+".gif";
+                var newsrc = this.attr("src").replace(/\.[^/.]+$/, ".png")
                 $(this).attr("src", newsrc);
             },
             function() {
-                var newsrc = this.attr("src").split("\\.")[0]+".png";
+                var newsrc = this.attr("src").replace(/\.[^/.]+$/, ".png")
                 $(this).attr("src", newsrc);
             }                         
         );                  
     });
-    */
 </script>
