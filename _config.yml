@@ -106,7 +106,7 @@ url-pretty: "snavas.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: "UA-108608181-1"
+#google_analytics: ""
 
 # Google Tag Manager ID
 #gtm: ""
@@ -116,9 +116,9 @@ url-pretty: "snavas.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # whether or not you want to allow users to opt out of tracking.
 
 #matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
+#  site_id: ""
+#  uri: ""
+#  opt-out: ""
 
 # --- Comments --- #
 
