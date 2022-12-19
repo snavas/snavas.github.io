@@ -10,9 +10,9 @@ facebook:
   name: "Facebook"
   baseURL: "https://www.facebook.com/"
   icon: "fa-facebook"
-  
+
 mastodon:
-  name: "Mastodon"
+  name: "Facebook"
   baseURL: "https://hci.social/"
   icon: "fa-mastodon"
 
